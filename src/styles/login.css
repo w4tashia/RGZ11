@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1216A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.auth-page {
+  width: 100%;
+  max-width: 400px;
+}
+
+.wrapper__tabs{
+    width: 50%;
+    justify-items: center;
+}
+
+.tabs-container {
+  margin-bottom: 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.under{
+    height: 1px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.tab {
+  width: 1px;
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding: 15px 0;
+  transition: border-color 0.3s ease;
+}
+
+.auth-container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Равномерно распределяет пространство между элементами */
+  min-height: 450px; /* Фиксированная минимальная высота */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container h3 {
+  margin: 0; /* Убираем отступы вокруг заголовка */
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 20px; /* Отделяем от кнопок */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+  width: 100%;
+  padding: 15px; /* Увеличиваем padding */
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e7ebf5;
+  color: #333333;
+  font-size: 16px; /* Увеличиваем размер шрифта */
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1438af;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button_user {
+  width: 100%;
+  padding: 12px;
+  background-color: #1438af00;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3A72F6;
+}
+
+p{
+  font-size: 14px;
+  color: #999999;
+}
+
+p a {
+  color: #1216A7;
+  text-decoration: none;
+}

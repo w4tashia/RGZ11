@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1216A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+  }
+  
+  .auth-page {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .tabs-container {
+    background-color: #1216A7;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  
+  .tab {
+    flex: 1; /* Равное распределение ширины вкладок */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 15px 0;
+    transition: border-color 0.3s ease;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .auth-container {
+    background: #ffffff;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #1216A7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px; /* Фиксируем высоту */
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0;
+    min-height: 30px; /* Установите минимальную высоту */
+  }
+  
+  
+  .input-container {
+    width: 100%;
+    margin-bottom: 20px; /* Отделяем от кнопок */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Формы занимают всю ширину контейнера */
+  }
+  
+  input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333333;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E50F5;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3A72F6;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  p a {
+    color: #1216A7;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,150 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__logo {
+  margin: 0;
+  cursor: pointer;
+}
+
+.header__user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.header__nav{
+    margin-right: 40px;
+}
+
+.header__reg{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 160px;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+body{
+  background: url('../pic/bg.png') no-repeat;
+  background-size: cover;
+}
+
+.logout__pic{
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.video-cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff00;
+  overflow: hidden; /* Ensures content stays within bounds */
+  transition: transform 0.2s ease-in-out; /* Animation for hover effect */
+  cursor: pointer;
+}
+
+.video-cards:hover{
+  transform: scale(1.05);
+}
+
+.video-thumbnail {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 170px; /* Fixed height for thumbnails */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.video-card__delete-button-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1; /* Кнопка поверх миниатюры */
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 16px; /* Space between video cards */
+  padding: 16px; /* Padding around the grid */
+  box-sizing: border-box;
+}
+
+.video-card__delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.video-card__delete-button:hover {
+  background-color: #ff0000;
+}
+
+.video-card__delete-icon {
+  width: 20px; /* Ширина и высота для изображения */
+  height: 20px;
+  object-fit: contain; /* Масштабирование изображения без искажения */
+  cursor: pointer; /* Указатель мыши при наведении */
+}
+
+.all{
+  height: 80vh;
+  width: 100vh;
+  background-size: cover;
+  padding-top: 150px;
+}
+
+/* Уменьшение размера крестика в уведомлениях */
+.Toastify__close-button {
+  max-width: 20px;
+  max-height: 20px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* При наведении сделать более заметным */
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+/* Настройка общего внешнего вида уведомлений */
+.Toastify__toast {
+  border-radius: 8px; /* Добавить закругленные углы */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Стили для успеха */
+.Toastify__toast--success {
+  background-color: #e6ffed; /* Светло-зеленый */
+  color: #027a48; /* Темно-зеленый */
+}
+
+/* Стили для ошибок */
+.Toastify__toast--error {
+  background-color: #ffebe6; /* Светло-красный */
+  color: #d92d20; /* Темно-красный */
+}
